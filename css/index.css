@@ -26,12 +26,12 @@
 }
 
 .background-title {
-  font-size: 5rem;
-  left: 2rem;
+  font-size: 10rem;
+  left: 33%;
   position: absolute;
   text-transform: uppercase;
-  opacity: 0.03;
-  top: 4rem;
+  opacity: 0.02;
+  top: 3rem;
   font-weight: 600;
 }
 
@@ -49,8 +49,52 @@
   text-transform: uppercase;
   font-weight: 700;
   color: #eee;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(2px);
+  background-color: #2643ff;
+}
+
+.btn:active {
+  transform: translateY(5px);
+  background-color: #2643ff;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .btn-title {
   margin-top: 1rem;
+}
+
+.title,
+.subtitle {
+  animation: title-load;
+  animation-duration: 1s;
+}
+
+@keyframes title-load {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 7680px) {
+  .background-title {
+    display: none;
+  }
+
+  .title {
+    left: 200px;
+  }
 }

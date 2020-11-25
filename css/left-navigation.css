@@ -51,4 +51,22 @@
   width: 40%;
   filter: grayscale(1); /* tymczasowo */
   opacity: 0.3; /* tymczasowo */
+  transition: all 0.2s ease-in-out;
+}
+
+.left-item img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@media (max-width: 500px) {
+  .left-panel {
+    width: 40px;
+  }
+
+  .logo {
+    padding: 0px;
+    height: 20px;
+    width: 20px;
+  }
 }
