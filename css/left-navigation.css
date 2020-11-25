@@ -49,8 +49,8 @@
 .left-item img {
   background-color: #fff;
   width: 40%;
-  filter: grayscale(1); /* tymczasowo */
-  opacity: 0.3; /* tymczasowo */
+  filter: grayscale(1);
+  opacity: 0.3;
   transition: all 0.2s ease-in-out;
 }
 
