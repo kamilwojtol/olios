@@ -6,7 +6,7 @@
 }
 
 .container {
-  background-image: url("/img/zdjecie1.jpg");
+  background-image: url("olios/img/zdjecie1.jpg");
   background-position: 50% 100%;
   background-size: cover;
   width: 100%;
